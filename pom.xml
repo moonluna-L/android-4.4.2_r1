@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.google.android</groupId>
+    <artifactId>android</artifactId>
+    <version>4.4.2_r1</version>
+    <packaging>jar</packaging>
+
+    <name>Google Android Platform</name>
+    <description>
+        Google Android Platform - KitKat, API level 19 (KOT49H)
+    </description>
+    <url>http://source.android.com/</url>
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://android.git.kernel.org/</url>
+        <connection>git://android.git.kernel.org/platform/manifest.git</connection>
+    </scm>
+
+    <properties>
+        <grepcode_date>2013-11-18</grepcode_date>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- org.apache.commons.logging -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- org.apache.http.* -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <!-- javax.microedition.khronos.* -->
+        <dependency>
+            <groupId>org.khronos</groupId>
+            <artifactId>opengl-api</artifactId>
+            <version>gl1.1-android-2.1_r1</version>
+        </dependency>
+        <!-- org.xml.sax.*, org.w3c.dom.* -->
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xmlParserAPIs</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+        <!-- org.xmlpull.v1.* -->
+        <dependency>
+            <groupId>xpp3</groupId>
+            <artifactId>xpp3</artifactId>
+            <version>1.1.4c</version>
+        </dependency>
+        <!-- org.json.* -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20080701</version>
+        </dependency>
+        <!-- junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.2</version>
+        </dependency>
+        <!-- javax.obex.* -->
+        <!-- 
+        <dependency>
+            <groupId>org.microemu</groupId>
+            <artifactId>microemu-extensions</artifactId>
+            <version>2.0.4</version>
+        </dependency>
+        -->
+    </dependencies>
+</project>
